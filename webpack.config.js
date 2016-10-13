@@ -34,6 +34,7 @@ var config = {
     //    warnings: false
     //  }
     //})
+    new webpack.OldWatchingPlugin()
   ]
 
 };
