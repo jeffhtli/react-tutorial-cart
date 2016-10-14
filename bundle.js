@@ -21427,8 +21427,8 @@
 
 	var React = __webpack_require__(1);
 	var ItemList = __webpack_require__(173);
-	var Coupon = __webpack_require__(175);
-	var numeral = __webpack_require__(176);
+	var Coupon = __webpack_require__(176);
+	var numeral = __webpack_require__(175);
 
 	var Cart = React.createClass({
 	  displayName: 'Cart',
@@ -21533,7 +21533,7 @@
 	'use strict';
 
 	var React = __webpack_require__(1);
-	var numeral = __webpack_require__(176);
+	var numeral = __webpack_require__(175);
 
 	var ItemList = React.createClass({
 	  displayName: 'ItemList',
@@ -21633,52 +21633,6 @@
 
 /***/ },
 /* 175 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-
-	var React = __webpack_require__(1);
-
-	var Coupon = React.createClass({
-	  displayName: "Coupon",
-
-
-	  render: function render() {
-	    return React.createElement(
-	      "div",
-	      null,
-	      React.createElement(
-	        "span",
-	        null,
-	        "Discount: "
-	      ),
-	      React.createElement(
-	        "select",
-	        { onChange: this.couponChanged },
-	        React.createElement(
-	          "option",
-	          { value: "0" },
-	          "None"
-	        ),
-	        React.createElement(
-	          "option",
-	          { value: "1" },
-	          "5% Discount"
-	        )
-	      )
-	    );
-	  },
-
-	  couponChanged: function couponChanged(e) {
-	    this.props.changeDiscount(e.target.value == 1 ? 0.05 : 0);
-	  }
-
-	});
-
-	module.exports = Coupon;
-
-/***/ },
-/* 176 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -22361,6 +22315,52 @@
 	    }
 	}).call(this);
 
+
+/***/ },
+/* 176 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	var React = __webpack_require__(1);
+
+	var Coupon = React.createClass({
+	  displayName: "Coupon",
+
+
+	  render: function render() {
+	    return React.createElement(
+	      "div",
+	      null,
+	      React.createElement(
+	        "span",
+	        null,
+	        "Discount: "
+	      ),
+	      React.createElement(
+	        "select",
+	        { onChange: this.couponChanged },
+	        React.createElement(
+	          "option",
+	          { value: "0" },
+	          "None"
+	        ),
+	        React.createElement(
+	          "option",
+	          { value: "1" },
+	          "5% Discount"
+	        )
+	      )
+	    );
+	  },
+
+	  couponChanged: function couponChanged(e) {
+	    this.props.changeDiscount(e.target.value == 1 ? 0.05 : 0);
+	  }
+
+	});
+
+	module.exports = Coupon;
 
 /***/ }
 /******/ ]);
