@@ -2,3 +2,7 @@
 
 A simple shopping cart
 ![Shopping Cart](./snapshot.png)
+
+### Run
+
+>webpack
