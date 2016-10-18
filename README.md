@@ -5,4 +5,5 @@ A simple shopping cart
 
 ### Run
 
->webpack
+>npm install <br/>
+webpack
